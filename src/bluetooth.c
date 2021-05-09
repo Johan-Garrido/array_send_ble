@@ -45,6 +45,8 @@ BT_GATT_SERVICE_DEFINE(data_svc,
 			       BT_GATT_CHRC_READ | BT_GATT_CHRC_NOTIFY,
 			       BT_GATT_PERM_READ, read_button, NULL,
 			       &data),
+        BT_GATT_CCC(lbslc_ccc_cfg_changed,
+                               BT_GATT_PERM_READ | BT_GATT_PERM_WRITE),
 );
 
 int bt_dataService_init(struct bt_dataService_cb *callbacks)
