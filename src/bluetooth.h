@@ -9,8 +9,8 @@
 #define BT_UUID_DATA BT_UUID_DECLARE_128 (BT_UUID_DATA_VAL)
 
 //Callback declaration
-typedef uint8_t(*data_cb_t) (void);
+typedef uint8_t* (*data_cb_t) (void);
 struct bt_dataService_cb{data_cb_t data_cb;};
 
 int bt_dataService_init (struct bt_dataService_cb *callbacks);
-int bt_send_data_value(uint8_t data);
+int bt_send_data_value(uint8_t* data);

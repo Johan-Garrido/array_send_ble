@@ -11,7 +11,7 @@
 #include <logging/log.h>
 
 static struct bt_dataService_cb dataService_cb;
-static                         uint8_t data;
+static                         uint8_t* data;
 static bool                   notify_enabled;
 static void lbslc_ccc_cfg_changed(const struct bt_gatt_attr *attr,
 				  uint16_t value)
@@ -57,13 +57,13 @@ int bt_dataService_init(struct bt_dataService_cb *callbacks)
 
 	return 0;
 }
-int bt_send_data_value(uint8_t data)
+int bt_send_data_value(uint8_t* data)
 {
 	if (!notify_enabled) {
 		return -EACCES;
 	}
-
+        //printk("Data %i\n", *data);
 	return bt_gatt_notify(NULL, &data_svc.attrs[2],
-			      &data,
+			      data,
 			      sizeof(data));
 }

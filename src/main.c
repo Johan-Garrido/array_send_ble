@@ -23,7 +23,7 @@
 #include "bluetooth.h"
 #define DEVICE_NAME     CONFIG_BT_DEVICE_NAME
 #define DEVICE_NAME_LENGTH     (sizeof(DEVICE_NAME) -1)
-uint8_t data = 0;
+uint8_t data[2] = {0, 10};
 
 static const struct bt_data ad[] = {
 	BT_DATA_BYTES(BT_DATA_FLAGS, (BT_LE_AD_GENERAL | BT_LE_AD_NO_BREDR)),
@@ -57,9 +57,9 @@ static struct bt_conn_cb conn_callbacks = {
 };
 
 
-static uint8_t app_data_cb(void)
+static uint8_t* app_data_cb(void)
 {
-	return data;
+	return &data;
 }
 
 static struct bt_dataService_cb data_callbacs = {
@@ -101,7 +101,9 @@ void main(void)
     printk("Advertising successfully started\n");
 
  while(1){
-     data++;
+     data[0]++;
+     data[1]++;
+     printk("Data %i %i\n", data[0], data[1]);
      bt_send_data_value(data);
      k_sleep(K_SECONDS(2));
  }
