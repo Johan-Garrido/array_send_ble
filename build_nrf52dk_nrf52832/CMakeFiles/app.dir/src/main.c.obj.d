@@ -110,4 +110,23 @@ CMakeFiles/app.dir/src/main.c.obj: ../src/main.c \
  /home/johangarrido/ncs/zephyr/include/sys/errno_private.h \
  zephyr/include/generated/syscalls/errno_private.h \
  /home/johangarrido/ncs/zephyr/include/tracing/tracing.h \
- zephyr/include/generated/syscalls/kernel.h ../src/bluetooth.h
+ zephyr/include/generated/syscalls/kernel.h \
+ /home/johangarrido/ncs/zephyr/lib/libc/minimal/include/stdio.h \
+ /home/johangarrido/ncs/zephyr/lib/libc/minimal/include/bits/restrict.h \
+ /home/johangarrido/ncs/zephyr/lib/libc/minimal/include/stdlib.h \
+ /home/johangarrido/ncs/zephyr/include/bluetooth/bluetooth.h \
+ /home/johangarrido/ncs/zephyr/lib/libc/minimal/include/string.h \
+ /home/johangarrido/ncs/zephyr/include/net/buf.h \
+ /home/johangarrido/ncs/zephyr/include/bluetooth/gap.h \
+ /home/johangarrido/ncs/zephyr/include/bluetooth/addr.h \
+ /home/johangarrido/ncs/zephyr/include/bluetooth/crypto.h \
+ /home/johangarrido/ncs/zephyr/include/bluetooth/hci.h \
+ /home/johangarrido/ncs/zephyr/include/bluetooth/hci_err.h \
+ /home/johangarrido/ncs/zephyr/include/bluetooth/conn.h \
+ /home/johangarrido/ncs/zephyr/include/bluetooth/uuid.h \
+ /home/johangarrido/ncs/zephyr/include/bluetooth/gatt.h \
+ /home/johangarrido/ncs/zephyr/lib/libc/minimal/include/sys/types.h \
+ /home/johangarrido/ncs/zephyr/lib/libc/minimal/include/sys/_types.h \
+ /home/johangarrido/ncs/zephyr/include/bluetooth/att.h \
+ /home/johangarrido/ncs/zephyr/include/settings/settings.h \
+ /home/johangarrido/ncs/zephyr/include/sys/byteorder.h ../src/bluetooth.h

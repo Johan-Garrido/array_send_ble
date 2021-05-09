@@ -1,17 +1,20 @@
 CMakeFiles/app.dir/src/bluetooth.c.obj: ../src/bluetooth.c \
  /home/johangarrido/samples/array_send_ble/build_nrf52dk_nrf52832/zephyr/include/generated/autoconf.h \
  /home/johangarrido/ncs/zephyr/include/toolchain/zephyr_stdint.h \
- /home/johangarrido/ncs/zephyr/include/zephyr.h \
- /home/johangarrido/ncs/zephyr/include/kernel.h \
- /home/johangarrido/ncs/zephyr/include/kernel_includes.h \
- /opt/gnuarmemb/lib/gcc/arm-none-eabi/9.2.1/include/stddef.h \
- /home/johangarrido/ncs/zephyr/include/zephyr/types.h \
- /home/johangarrido/ncs/zephyr/lib/libc/minimal/include/stdint.h \
- /home/johangarrido/ncs/zephyr/lib/libc/minimal/include/limits.h \
+ /home/johangarrido/ncs/zephyr/include/sys/printk.h \
  /home/johangarrido/ncs/zephyr/include/toolchain.h \
  /home/johangarrido/ncs/zephyr/include/toolchain/gcc.h \
  /home/johangarrido/ncs/zephyr/include/toolchain/common.h \
  /home/johangarrido/ncs/zephyr/lib/libc/minimal/include/stdbool.h \
+ /opt/gnuarmemb/lib/gcc/arm-none-eabi/9.2.1/include/stddef.h \
+ /opt/gnuarmemb/lib/gcc/arm-none-eabi/9.2.1/include/stdarg.h \
+ /home/johangarrido/ncs/zephyr/lib/libc/minimal/include/inttypes.h \
+ /home/johangarrido/ncs/zephyr/lib/libc/minimal/include/stdint.h \
+ /home/johangarrido/ncs/zephyr/include/zephyr.h \
+ /home/johangarrido/ncs/zephyr/include/kernel.h \
+ /home/johangarrido/ncs/zephyr/include/kernel_includes.h \
+ /home/johangarrido/ncs/zephyr/include/zephyr/types.h \
+ /home/johangarrido/ncs/zephyr/lib/libc/minimal/include/limits.h \
  /home/johangarrido/ncs/zephyr/include/linker/sections.h \
  /home/johangarrido/ncs/zephyr/include/linker/section_tags.h \
  /home/johangarrido/ncs/zephyr/include/sys/atomic.h \
@@ -34,9 +37,6 @@ CMakeFiles/app.dir/src/bluetooth.c.obj: ../src/bluetooth.c \
  zephyr/include/generated/syscall_list.h \
  /home/johangarrido/ncs/zephyr/include/arch/syscall.h \
  /home/johangarrido/ncs/zephyr/include/arch/arm/aarch32/syscall.h \
- /home/johangarrido/ncs/zephyr/include/sys/printk.h \
- /opt/gnuarmemb/lib/gcc/arm-none-eabi/9.2.1/include/stdarg.h \
- /home/johangarrido/ncs/zephyr/lib/libc/minimal/include/inttypes.h \
  /home/johangarrido/ncs/zephyr/include/arch/cpu.h \
  /home/johangarrido/ncs/zephyr/include/sys/arch_interface.h \
  /home/johangarrido/ncs/zephyr/include/irq_offload.h \
@@ -110,4 +110,24 @@ CMakeFiles/app.dir/src/bluetooth.c.obj: ../src/bluetooth.c \
  /home/johangarrido/ncs/zephyr/include/sys/errno_private.h \
  zephyr/include/generated/syscalls/errno_private.h \
  /home/johangarrido/ncs/zephyr/include/tracing/tracing.h \
- zephyr/include/generated/syscalls/kernel.h ../src/bluetooth.h
+ zephyr/include/generated/syscalls/kernel.h ../src/bluetooth.h \
+ /home/johangarrido/ncs/zephyr/include/bluetooth/bluetooth.h \
+ /home/johangarrido/ncs/zephyr/lib/libc/minimal/include/string.h \
+ /home/johangarrido/ncs/zephyr/lib/libc/minimal/include/bits/restrict.h \
+ /home/johangarrido/ncs/zephyr/include/net/buf.h \
+ /home/johangarrido/ncs/zephyr/include/bluetooth/gap.h \
+ /home/johangarrido/ncs/zephyr/include/bluetooth/addr.h \
+ /home/johangarrido/ncs/zephyr/include/bluetooth/crypto.h \
+ /home/johangarrido/ncs/zephyr/include/bluetooth/hci.h \
+ /home/johangarrido/ncs/zephyr/include/bluetooth/hci_err.h \
+ /home/johangarrido/ncs/zephyr/include/bluetooth/conn.h \
+ /home/johangarrido/ncs/zephyr/include/bluetooth/uuid.h \
+ /home/johangarrido/ncs/zephyr/include/bluetooth/gatt.h \
+ /home/johangarrido/ncs/zephyr/lib/libc/minimal/include/sys/types.h \
+ /home/johangarrido/ncs/zephyr/lib/libc/minimal/include/sys/_types.h \
+ /home/johangarrido/ncs/zephyr/include/bluetooth/att.h \
+ /home/johangarrido/ncs/zephyr/include/logging/log.h \
+ /home/johangarrido/ncs/zephyr/include/logging/log_instance.h \
+ /home/johangarrido/ncs/zephyr/include/logging/log_core.h \
+ /home/johangarrido/ncs/zephyr/include/logging/log_msg.h \
+ zephyr/include/generated/syscalls/log_core.h
